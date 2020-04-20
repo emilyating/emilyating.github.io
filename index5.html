@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Homework1</title>
+</head>
+<Script>
+    function add(){
+        var number1 = document.getElementById('number1').value;
+        var number2 = document.getElementById('number2').value;
+        number1 = parseInt(number1);
+        number2 = parseInt(number2);
+    
+        document.getElementById('result').innerHTML = number1 + number2;
+    
+    }
+</Script>
+    
+<body>
+   <h1>Homework</h1>
+   <h3>test1</h3>
+   
+   <input type="text" id='number1' placeholder="請輸入數字1">
+   <input type="text" id='number2' inputmode="請輸入數字2">
+   <button type="button" onclick='add()'>Add Two Number</button>
+   <p id='result'>This is a paragraph.</p>
+   
+</body>
+</html>
