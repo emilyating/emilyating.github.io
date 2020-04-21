@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Roop Test</title>
+</head>
+<Script>
+    function testRoop(){ var show=""; show = show +'1'
+    var show="";
+    for(var i = 0; i<100 ; i = i + 1){show = show +i + '<br>'; }
+    //show + 1之後丟回去給show
+    //<br>為換行
+    //show= show + '1<br>';
+    //show= show + '2<br>';
+    //show= show + '3<br>';
+    //show= show + '4<br>';
+    //show= show + '5<br>';
+    //i++=做完+1
+    document.getElementById('test').innerHTML
+    =show;  }
+
+</Script>
+  
+<body>
+      
+    <button type="button" onclick="testRoop()">Click me!</button>
+    
+    <p id="test" >This is a paragraph</p>
+    
+   
+    
+</body>
+</html>
