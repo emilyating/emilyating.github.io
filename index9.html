@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Roop Test</title>
+</head>
+<Script>
+    function testRoop() {
+        //取得輸入框框數字 
+        var squarSize = document.getElementById('squre_size').value
+        //宣告一個結果之後顯示用
+        var result = "";
+        //第一層迴圈+第二個迴圈
+        for (var i = 0; i < squarSize; i++) {
+            for (var j = 0; j < squarSize; j++) {
+                result = result + '*';
+            }
+            result = result + '<br>';
+        }
+
+        document.getElementById('test').innerHTML = result;
+    }
+
+</Script>
+
+<body>
+
+    <input type="number" id="squre_size">
+    <button type='button' onclick="testRoop()"> Click plz </button>
+    <p id="test">This is a paragraph </p>
+
+</body>
+
+</html>
