@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Roop Test1</title>
+</head>
+<Script>
+    function testRoop1(){
+    var show="";
+    for(var i = 0; i<1000 ; i = i + 10){show = show  + '*<br>'; }
+  
+    document.getElementById('test').innerHTML
+    =show;  }
+
+</Script>
+  
+<body>
+      
+    <button type="button" onclick="testRoop1()">Click me!</button>
+    
+    <p id="test" >This is a paragraph</p>
+    
+   
+    
+</body>
+</html>
